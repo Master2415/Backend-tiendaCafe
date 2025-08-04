@@ -1,57 +1,83 @@
-# 🚀 Getting started with Strapi
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+# ☕ Backend Tienda de Café
 
-### `develop`
+Proyecto backend para una tienda eCommerce de café, desarrollado con **Strapi v4**, un CMS headless basado en Node.js. Este backend permite gestionar productos, categorías y órdenes, proporcionando una API REST robusta para el frontend.
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+## 🚀 Tecnologías utilizadas
+
+* **Strapi v4** (CMS Headless)
+* **Node.js**
+* **SQLite** (por defecto, configurable a otro motor)
+* **REST API**
+
+## 📦 Funcionalidades principales
+
+* Gestión completa de productos: nombre, descripción, precio, imágenes y stock.
+* Organización de productos por categorías.
+* Creación y seguimiento de órdenes de compra.
+* Generación automática de endpoints REST.
+* Panel de administración amigable para CRUD de datos.
+
+## 🛠️ Instalación y ejecución
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/Master2415/Backend-tiendaCafe.git
+   cd Backend-tiendaCafe
+   ```
+
+2. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicia el proyecto:
+
+   ```bash
+   npm run develop
+   ```
+
+4. Accede al panel de administración:
+
+   ```
+   http://localhost:1337/admin
+   ```
+
+> La primera vez deberás crear un usuario administrador.
+
+## 🔐 Seguridad
+
+* Sistema de autenticación de Strapi.
+* Control de acceso mediante roles y permisos personalizables.
+* Gestión segura de usuarios.
+
+## 📁 Estructura de colecciones
+
+* **Productos**: nombre, descripción, precio, imagen, stock.
+* **Categorías**: nombre, descripción.
+* **Órdenes**: cliente, productos, estado, fecha.
+
+## 🌐 Consumo de APIs
+
+Strapi expone automáticamente endpoints RESTful. Ejemplo:
 
 ```
-npm run develop
-# or
-yarn develop
+GET /api/products
+POST /api/orders
 ```
 
-### `start`
+Puedes usarlos desde el frontend con herramientas como **Axios** o **fetch**.
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+## ✅ Estado del proyecto
 
-```
-npm run start
-# or
-yarn start
-```
+> Proyecto completado como ejercicio académico. Puede ser expandido con autenticación de clientes, pasarela de pagos o dashboard de ventas.
 
-### `build`
+## 📄 Licencia
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+MIT License
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
