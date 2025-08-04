@@ -67,6 +67,15 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "origin": {
+      "type": "enumeration",
+      "enum": [
+        "Colombia",
+        "Brasil",
+        "Perú",
+        "Etiopía"
+      ]
     }
   }
 }
